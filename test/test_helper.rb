@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'sina-emoji'
+require 'emoji'
 
 class TestCase < MiniTest::Test
   def self.test(name, &block)
