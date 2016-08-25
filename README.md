@@ -1,16 +1,16 @@
-gemoji
+Sina Emoji
 ======
 
-Emoji images and names. See the LICENSE for copyright information.
+Emoji images and names for Sina Emotion
 
 
 Installation
 ------------
 
-Add `gemoji` to your Gemfile.
+Add `sina-emoji` to your Gemfile.
 
 ``` ruby
-gem 'gemoji'
+gem 'sina-emoji', github: 'hbin/sina-emoji'
 ```
 
 **Sync images**
@@ -50,12 +50,12 @@ Example Rails Helper
 
 This would allow emojifying content such as: `it's raining :cat:s and :dog:s!`
 
-See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
+See the [新浪微博卡通表情](http://www.360doc.com/content/12/1020/16/396937_242613127.shtml) for more examples.
 
 ```ruby
 module EmojiHelper
   def emojify(content)
-    h(content).to_str.gsub(/:([\w+-]+):/) do |match|
+    h(content).to_str.gsub(/\[(\p{Han}*|[\w+-]+)\]/) do |match|
       if emoji = Emoji.find_by_alias($1)
         %(<img alt="#$1" src="#{image_path("emoji/#{emoji.image_filename}")}" style="vertical-align:middle" width="20" height="20" />)
       else
