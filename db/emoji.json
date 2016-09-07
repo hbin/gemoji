@@ -18,7 +18,8 @@
 , {
     "aliases": [
       "laugh",
-      "哈哈"
+      "哈哈",
+      "大笑"
     ]
   , "tags": [
     ]
@@ -450,7 +451,8 @@
 , {
     "aliases": [
       "z2_thumb",
-      "赞"
+      "赞",
+      "pt赞一个"
     ]
   , "tags": [
     ]
@@ -571,6 +573,15 @@
     "aliases": [
       "snow_thumb",
       "雪"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "aliases": [
+      "flower",
+      "鲜花",
+      "pt鲜花"
     ]
   , "tags": [
     ]
